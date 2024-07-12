@@ -87,13 +87,6 @@ router.post("/login", async (req, res) => {
   }
 });
 
-router.get("/test", async (req, res) => {
-  try {
-    console.log("testing ");
-  } catch (err) {
-    console.error(err.message);
-    res.status(500).send("Server error");
-  }
-});
+
 
 module.exports = router;
